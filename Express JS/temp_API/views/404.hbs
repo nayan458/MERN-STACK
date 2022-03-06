@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            text-align: center;
+        }
+        .errD{
+            margin-right: 100px;
+            margin-left: 100px;
+        }
+        .errP{
+            font-size: 200px;
+        }
+        @media (mai-width: 550px) {
+        .errD{
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        .errP{
+            font-size: 30px;
+        }
+            
+        }
+    </style>
+    {{>head}}
+</head>
+<header>
+    {{>nav}}
+</header>
+<body>
+    <p class="errP">404</p>
+    <div class="errD">
+    <p>We could not find the page you were looking for, so we found something to make you laugh to make up for it.</p>
+    <button class="GoBk">Go Back a Page</button>
+    </div>
+</body>
+</html>

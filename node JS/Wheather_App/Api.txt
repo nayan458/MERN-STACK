@@ -1,0 +1,3 @@
+api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
+76a7fc8a52a722b527586357b1e320d8
+api.openweathermap.org/data/2.5/weather?q=Assam&appid=76a7fc8a52a722b527586357b1e320d8

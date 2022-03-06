@@ -1,0 +1,38 @@
+use nayanDb
+db=> database
+
+db.nayandata.insertOne({name:"mongoDB",type:"Data Base",videos:80,active:true})
+db.nayandata.find().pretty()
+
+ db.nayandata.insertMany([{name:"Mongo",type:"Data base",videos:80,active:true},{name:"nodeJs",type:"Backend",videos:76,active:false}])
+
+db.collection.find(query,projection)
+
+CURD
+     db.nayandata.find({name:"Mongo"}).pretty()
+
+db.nayandata.find({name:"Mongo"},{_id:0,name:1}).pretty()
+db.nayandata.find({active:true}).pretty()
+db.nayandata.find({active:true}).pretty().limit(1)
+ db.nayandata.find({active:true}).pretty().limit(2)
+db.nayandata.findone({active:true})
+db.nayandata.find({active:true}).pretty().limit(1).skip(1)
+
+
+updateOne=> db.COLLECTION_NAME.updateOne(<filter>,<update>)
+
+//////////////$set:
+
+> db.nayandata.updateOne({name:"Mongo"},{$set: {type:"Full Stack"}})
+{ "acknowledged" : true, "matchedCount" : 1, "modifiedCount" : 1 }
+
+> db.nayandata.updateMany({type:"Front End"},{$set: {active:false}})
+{ "acknowledged" : true, "matchedCount" : 2, "modifiedCount" : 2 }
+
+//////Delet///////////
+
+> db.nayandata.deleteMany({type:"Backend"})
+{ "acknowledged" : true, "deletedCount" : 1 }
+
+> db.nayandata.deleteMany({})
+{ "acknowledged" : true, "deletedCount" : 2 }

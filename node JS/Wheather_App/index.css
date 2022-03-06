@@ -1,0 +1,79 @@
+.card{
+    width: 20rem;
+    height: 30rem;
+    border-radius: 20px;
+    border: 3px solid black; 
+    animation: wave 0.8s ease 0s infinite ;
+    animation: wave 0.8s timing-function delay iteration-count direction fill-mode;
+    /* background: linear-gradient(180deg, 
+    rgb(179, 149, 235)0.1%,
+    rgb(89, 53, 154)50%,
+    rgb(82, 13, 194)100%
+    ); */
+}
+@keyframes wave {
+    0%{
+        background: linear-gradient(180deg, 
+    rgb(179, 149, 235)0.1%,
+    rgb(89, 53, 154)50%,
+    rgb(82, 13, 194)100%
+    );
+    }
+    10%{
+        background: linear-gradient(185deg, 
+    rgb(179, 149, 235)0.1%,
+    rgb(89, 53, 154)60%,
+    rgb(82, 13, 194)100%
+    );
+    }
+    20%{
+        background: linear-gradient(183deg, 
+    rgb(179, 149, 235)0.1%,
+    rgb(89, 53, 154)70%,
+    rgb(82, 13, 194)100%
+    );
+    }
+    40%{
+        background: linear-gradient(179deg, 
+    rgb(179, 149, 235)0.1%,
+    rgb(89, 53, 154)66%,
+    rgb(82, 13, 194)100%
+    );
+    }
+    50%{
+        background: linear-gradient(177deg, 
+    rgb(179, 149, 235)0.1%,
+    rgb(89, 53, 154)62%,
+    rgb(82, 13, 194)100%
+    );
+    }
+    80%{
+        background: linear-gradient(183deg, 
+    rgb(179, 149, 235)0.1%,
+    rgb(89, 53, 154)58%,
+    rgb(82, 13, 194)100%
+    );
+    }
+    100%{
+        background: linear-gradient(180deg, 
+    rgb(179, 149, 235)0.1%,
+    rgb(89, 53, 154)50%,
+    rgb(82, 13, 194)100%
+    );
+    }
+    
+}
+#whea_con{
+    position: relative;
+    top: 30%;
+    transform: translateY(-30%);
+    text-align: center;
+    font-size: 50px;
+}
+.info{
+    position: relative;
+    top:40%;
+    transform: translateY(-40%);
+    text-align: center;
+    font-size: large;
+}

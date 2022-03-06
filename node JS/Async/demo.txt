@@ -1,0 +1,2 @@
+Evrey new day is awesom
+New text is added using Async append

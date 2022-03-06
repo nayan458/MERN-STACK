@@ -1,0 +1,15 @@
+{
+  "name": "wheather_app",
+  "version": "1.0.0",
+  "description": "Weather app using api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nayan",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.12",
+    "requests": "^0.3.0"
+  }
+}

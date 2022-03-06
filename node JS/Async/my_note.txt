@@ -1,0 +1,7 @@
+// we pass them a function as an arguement - a callback -
+// that gets called when that task completes.
+// The callback has an arguement that tells you wheather
+// the operation completed successfully.
+// Now we need to say what to do when fs.writeFile 
+// has completed (even if it's nothing), and start 
+//  checking for errors.

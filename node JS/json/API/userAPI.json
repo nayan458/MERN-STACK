@@ -1,0 +1,28 @@
+[
+    
+        {
+            "id":1,
+            "fullName":"Nayanmoni Baruah",
+            "fName":"Nayanmoni",
+            "lName":"Baruah"
+        },
+        
+        {
+            "id":1,
+            "fullName":"Gaurav Kakoti",
+            "fName":"Gaurav",
+            "lName":"Kakoti"
+        },
+         {
+            "id":1,
+            "fullName":"Pragyanu G Deka",
+            "fName":"Pragyanu G",
+            "lName":"Deka"
+        },
+         {
+            "id":1,
+            "fullName":"Furkan Ahmed",
+            "fName":"Furkan",
+            "lName":"Ahmed"
+            }
+]

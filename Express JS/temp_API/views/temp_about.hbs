@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            text-align: center;
+        }
+        .errD{
+            margin-right: 100px;
+            margin-left: 100px;
+        }
+        .errP{
+            font-size: 200px;
+        }
+        @media (mai-width: 550px) {
+        .errD{
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        .errP{
+            font-size: 30px;
+        }
+            
+        }
+    </style>
+    {{>head}}
+</head>
+<header>
+    {{>nav}}
+</header>
+<body>
+    <p class="errP">country</p>
+    <div class="errD">
+    <p>{{country}}</p>
+    <button class="GoBk">Go Back a Page</button>
+    </div>
+</body>
+</html>

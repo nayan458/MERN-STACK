@@ -1,0 +1,295 @@
+*{
+    margin:0px ;
+    padding: 0px;
+}
+
+.heading{
+    line-height: 200%;
+    text-align: center;
+}
+/**************  WRAPER *************/
+.wrap{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: stretch;
+    position: absolute;
+    height: 100%;
+}
+
+.wrap > div {
+    /* these are the flex items */
+    flex: 1;
+  }
+
+/* SIDE BAR */
+.sidebarmenu{
+    min-width: 250px;
+    max-width: 250px;
+    max-height: 100%;
+    background-color: #13795b;
+    margin-right: 10px;
+}
+.sidebarmenu ul li{
+    min-width: 238px;
+    max-width: 238px;
+    font-size: large;
+    padding: 5px;
+    background-color: #1aa179;
+    padding-top:3vh ;
+}
+
+.sidebarmenu ul li a{
+    color: white;
+}
+
+
+.sidebarmenu ul li:hover{
+    cursor: pointer;
+    animation: flo 2s ease 0s 1;
+    background-color:#0a4231 ;
+}
+@keyframes flo{
+    0%{
+        background-color: #1aa179;
+    }
+       50% {
+
+            background-color: rgb(13, 80, 60);
+        }
+        100%{
+            background-color: #0a4231;
+        }
+}
+
+.addAnim{
+    /* animation: floRvs 2s ease 0s 1; */
+    font-size: 100px;
+}
+
+@keyframes floRvs{
+    0%{
+        background-color: #0a4231;
+    }
+    50% {
+        
+        background-color: rgb(13, 80, 60);
+    }
+    100%{
+        background-color: #1aa179;
+        }
+}
+
+.sidebarmenu ul li i{
+    color:rgb(6, 40, 30) ;
+}
+
+/***************/
+/* MESSAGE BOX */
+
+.cont_00{
+    height: 100%;
+    background: linear-gradient(180deg, 
+    rgb(19, 121, 90)0.1%,
+    rgb(13, 80, 60)50%,
+    rgb(6, 40, 30)100%
+    );
+}
+.cont_01{
+    position: relative;
+    height: 100%;
+}
+.cont_02{
+    text-align:justify;
+    padding: 20px;
+    font-size: large;
+    line-height: 115%;
+    font-family: 'Otomanopee One', sans-serif;
+    color: rgb(255, 255, 255);   
+}
+.cont_03{
+    text-align:justify;
+    padding: 20px;
+    font-size: large;
+    line-height:200%;
+    font-family: 'Otomanopee One', sans-serif;
+    color: rgb(255, 255, 255);  
+    padding: 4vh 14vh 0vh 14vh;
+}
+.dirct{
+    margin-left: 30px;
+    color: #ff7f50;
+}
+
+.hidden{
+    display: none;
+}
+
+.fas{
+    opacity: 0px;
+}
+.button{
+    cursor: pointer;
+    color: rgb(219, 211, 211);
+    opacity: 0px;
+    background-color: rgba(0, 128, 0, 0);
+    border: 10px solid rgba(0, 128, 0, 0);
+    
+}
+ul{
+    text-decoration: none;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/*      ****    I_F_R_A_M_E     *****   */
+iframe{
+    height: 430px;
+     width: 80%;
+    }
+
+/* ******************** */
+
+/* ../suggestion/ */
+.mid{
+    margin-top: 10vh;
+    position:relative;
+    text-align:center;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size:x-large;
+}
+#mal{
+    color: turquoise;
+    text-decoration: none;
+    font-family: 'Source Code Pro', monospace;
+}
+/**********************************/
+/*   TABLE */
+.table_div {
+    overflow:hidden;
+    padding-left: 100px ;
+    overflow-y: scroll;
+    height: 500px;
+}
+.tableHead{
+    color: coral ;
+}
+.tbl tr td{
+    padding: 20px;
+}
+
+.div_before_table {
+    overflow:hidden;
+    padding-left: 100px ;
+    overflow-y: scroll;
+    height: 500px;
+}
+
+/**********************************/
+/* FLEX_TABLE */
+.flex_table{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.flex_table a{
+    color: #000;
+}
+.flex_table tr td{
+    padding: 10px;
+    text-align: center;
+}
+/* *********************************** */
+
+
+/* *********************************** */
+
+@media (max-width:1023px)
+{
+    .fas{
+        font-size: 30px;
+    }
+    .cont_00{
+        min-height:1000px ;
+        max-height:1000px ;
+    }
+    .sidebarmenu{
+        min-height:1000px ;
+        max-height:1000px ;
+    }
+    .cont_02{
+        padding: 5px;
+    }
+    .cont_03{
+        padding: 5px;
+    }
+    .heading{
+        padding-top: 20px;
+        font-size: medium;
+    }
+    iframe{
+        width: 80%;
+        size: 110vw;
+   } 
+    /*   TABLE  */
+   
+
+    .div_before_table {
+        padding-left: 5px ;
+    }
+    .tableHead{
+        color: coral ;
+    }
+    .tbl tr td{
+        padding: 10px;
+    }
+    .cont_0{
+        font-size: small;
+    }
+    /************************************/
+}
+
+@media  (max-width:610px){
+    .heading{
+        font-size: 10px;
+    }
+    .cont_03{
+        font-size: small;
+    }
+    .fas{
+        size: 2px;
+        font-size: 25px;
+    }
+    .sidebarmenu{
+        min-width:140px ;
+        max-width:140px ;
+        max-height: 100%;
+        background-color: #13795b;
+        margin-right: 2px;
+    }
+    .sidebarmenu ul li{
+        min-width: 128px;
+        max-width: 128px;
+        font-size: small;
+        padding: 5px;
+        background-color: #1aa179;
+        /* margin-left: 2px; */
+        padding-top:3vh ;
+    }
+    iframe{
+         width: 60%;
+    } 
+}
+
+@media (max-height:700px) {
+    .cont_00{
+        min-height:1000px ;
+        max-height:1000px ;
+    }
+    .sidebarmenu{
+        min-height:1000px ;
+        max-height:1000px ;
+    }
+}

@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+        }
+        :root{
+            --bg-nav-col: rgb(48, 48, 48);
+            --bord-col: rgb(146, 146, 146);
+        }
+        nav{
+            color: wheat;
+            background: var(--bg-nav-col);
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+        }
+        nav a{
+            text-decoration: none;
+            color: var(--bord-col);
+
+        }
+        nav ul{
+             display: inline-flex;
+        }
+        nav ul li{
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        nav ul li :last-child{
+            padding-right: 0%;
+        }
+        nav li {
+            font-size: large;
+            list-style: none;
+        }
+        /* ******************** */
+        .sub_menu{
+            display: none;
+            position: absolute;
+            padding: 10px;
+            flex-direction: column;
+            background: var(--bg-nav-col);
+
+        }
+        nav ul li ul li{
+            border-bottom:2px solid var(--bord-col) ;
+        }
+        nav ul li ul li :last-child{
+            border-bottom: 0%;
+        }
+        nav ul li:hover .sub_menu{
+            display: block;
+        }
+        /* ******************** */
+        .sub_menu2{
+            display: none;
+            position: absolute;
+            padding: 5px;
+            flex-direction: column;
+            background: var(--bg-nav-col);
+        }
+        .sub_menu li:hover .sub_menu2{
+            display: block;
+            padding: 5px;
+            flex-direction: column;
+            background: var(--bg-nav-col);
+        }
+        /* ************************ */
+        .sub_menu3{
+            display: none;
+            position: absolute;
+            padding: 5px;
+            flex-direction: column;
+            background: var(--bg-nav-col);
+        }
+        .sub_menu2:hover .sub_menu3{
+            display: block;
+        }
+        .nav_div > nav ul ul ul			{left:100%;}
+        nav li:last-child{
+            border-bottom:none ;
+        }
+        nav ul ul{
+            border: 3px solid salmon;
+            border-radius: 10px;
+        }
+        .nav_div > nav li{
+            z-index: 1;
+            nav-index: 1;
+        }
+
+    </style>
+</head>
+<header>
+    <section class="nav_div">
+    <nav>
+        <ul>
+          <li><a href="index.php">Home</a></li>
+          <li><a href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
+
+                <ul class="sub_menu">
+
+                    <li><a href="about_college.php">Legacy</a></li>
+                    
+                    <li><a href="mision_&amp;_vision.php">Mission &amp; Vision</a></li>
+                    
+                    <li>    <a href="college_motto.php">College Motto</a></li>
+                    
+                    <li><a href="college_emblem.php">College Emblem</a></li>
+                    
+                    <li><a href="college_anthem.php">College Anthem</a></li>
+                    
+                    <li><a href="our_esteem_leader.php">Our Esteemed Leaders</a></li>
+                    
+                    <li><a href="Statutory_Body.php">Statutory Body</a></li>
+                </ul>
+          </li>
+          <li><a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Administration</a>
+               <ul class="sub_menu">
+         
+                    <li><a href="organogram.php">Organogram</a></li>
+        
+                    <li><a href="principal.php">Principal</a></li>
+                    
+                    <li><a href="non_teaching.php">Support Staff</a></li>
+                    
+                    <li><a href="Library.php">Library</a></li>
+        
+               </ul>
+         
+          </li>
+
+          <!-- *************************************************** -->
+
+          <li>
+        
+            <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Academics</a>
+
+                <ul id="sub_menu" class="sub_menu">  <!-- ***************************************** -->
+        
+                    <li><a href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Programmes</a>
+
+                        <ul class="sub_menu2">    <!-- ***************************************** -->
+
+                            <li><a href="Hs.php">Higher Secondary(H.S)</a></li>
+
+                            <li><a href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Under Graduate(U.G)</a>
+
+                                <ul class="sub_menu3">      <!-- ***************************************** -->
+
+                                    <li><a href="B.com.php" >B.Com</a></li>
+                
+                                    <li><a href="BAEconomics.php" >B.A</a></li>
+                
+                                    
+                
+                                    <li><a href="BScEcoStats.php" >B.Sc</a></li>
+                
+                                    
+                
+                                    <li><a href="BBA.php" >BBA</a></li>
+                
+                                    
+                
+                                    <li><a href="BCA.php" >BCA</a></li>
+                                </ul>                       <!-- ***************close 1**************** -->
+                            </li>    
+                    <li>
+                        <a href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Post Graduate(P.G)</a>
+                        <ul class="sub_menu3">                                <!-- ***************************************** -->
+        
+                            <li><a href="Mcom.php" >M.Com</a></li>
+                            
+                            <li><a href="PGDCA.php" >PGDCA</a></li>
+                        </ul>                               <!--*********close 2 ***************-->
+                    </li>
+        
+             
+            <li><a href="Distance_education.php" >Distance Education</a></li>
+         
+             
+          
+            <li><a href="http://vad.kcdccollege.ac.in/" >Value Added Courses</a></li>
+            </ul>       <!--*********close 3 ***************-->
+           </li>
+        
+        
+        
+        
+        
+           <ul class="sub_menu3">             <!--****************************************-->
+        
+           <li><a href="Hs.php" >HS</a></li>
+        
+            
+        
+           <li><a href="B.com.php" >B.Com</a></li>
+        
+            
+        
+           <li><a href="BAEconomics.php" >B.A</a></li>
+        
+            
+        
+           <li><a href="BScEcoStats.php" >B.Sc</a></li>
+        
+            
+        
+           <li><a href="BBA.php" >BBA</a></li>
+        
+            
+        
+           <li><a href="BCA.php" >BCA</a></li>
+        
+            
+        
+           <li><a href="Mcom.php" >M.Com</a></li>
+        
+            
+        
+           <li><a href="PGDCA.php" >PGDCA</a></li>
+        
+            
+        
+           <li><a href="Distance_education.php" >Distance Education</a></li>
+        
+            
+        
+           <li><a href="http://vad.kcdccandroid.in/" >Value Added Courses</a></li>
+        
+           </ul>            <!--*********close 4 ***************-->
+        
+           
+        
+           
+        
+           <li><a href="#">Examination</a>
+        
+           <ul class="sub_menu2">            <!--****************************** ***************-->
+        
+           <li><a href="" >Notifications</a></li>
+        
+           </ul>                <!--*********close 5 ***************-->
+        
+           </li>
+        
+           
+        
+           <li><a href="pdf/Academic Calendar 2021-converted.pdf" download="Academic Calender">Academic Calendar</a></li>
+        
+           
+        
+           <li><a href="class_routine.php">College Routine</a></li>
+        
+           
+        
+           <li><a href="course_outcome.php">Course Outcome</a></li>
+        
+           
+        
+           <li><a href="result_analysis.php">Result Analysis</a></li>
+        
+           
+        
+           
+        
+          </ul>
+        
+          </li>
+        
+          <li><a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Admissions</a>
+        
+          <ul class="sub_menu">
+        
+           <li><a href="Intake_capacity.php">Intake Capacity &amp; Eligibility Criteria</a></li>
+        
+           <li><a href="Reservation_of_seats.php">Reservation Of Seats</a></li>
+        
+           
+        
+           <li><a href="#">Fees Structure</a></li>
+        
+           <li><a href="#">Online Admission Guidelines</a></li>
+           
+           <li><a href="pdf/prospectus/PROSPECTUS 2021-22, KCDCC.pdf">Prospectus 2021-22</a></li>
+        
+           
+        
+          </ul>
+        
+          </li>
+        
+          <li >
+        
+            <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        
+           IQAC
+        
+          </a>
+        
+          <ul class="sub_menu">
+        
+           <li><a href="About_iqac.php">About IQAC</a></li>
+        
+           
+        
+           <li><a href="iqac_committee.php">Committee</a></li>
+        
+           
+        
+           <li><a href="iqac_activities.php">Activities</a></li>
+        
+           
+        
+           <li><a href="iqac_aqars.php">AQARs</a></li>
+        
+           
+        
+           <li><a href="iqac_minutes.php">Minutes</a></li>
+        
+           
+        
+           <li><a href="departmental_reports.php">Departmentals Reports</a></li>
+        
+           
+        
+           <li><a href="iqac-best_practices.php">Best Practices</a></li>
+        
+           
+        
+           <li><a href="iqac_mentor_mentee.php">Mentor-Mentee</a></li>
+        
+           
+        
+           <li><a href="iqac_sssr.php">SSSR</a></li>
+        
+           </ul>
+        
+          </li>
+        
+        
+        
+          <li >
+        
+           
+        
+             <a href="Library.php" aria-expanded="false">
+        
+           Library
+        
+           </a>
+        
+          
+        
+          
+        
+          </li>
+        
+          <li >
+        
+            <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        
+           Research &amp; Publications
+        
+          </a>
+        
+          <ul class="sub_menu">
+        
+           <li><a href="College_publications.php">College Publications</a></li>
+        
+           
+        
+           <li><a href="r&amp;d.php">Research &amp; Development Cell</a></li>
+        
+           
+        
+          </ul>
+        
+          </li>
+        
+          <li >
+        
+            <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        
+           Infrastructure &amp; Facilities
+        
+          </a>
+        
+          <ul class="sub_menu">
+        
+           <li><a href="College_app.php">College App</a></li>
+        
+           
+        
+           <li><a href="computer_lab.php">Computer Laboratory</a></li>
+        
+           
+        
+           <li><a href="commerce_lab.php">Commerce Laboratory</a></li>
+        
+           
+        
+           <li><a href="ITC_Enabled_classrooms.php">ICT Enabled Classrooms</a></li>
+        
+           
+        
+           <li><a href="Career_Guidance_&amp;_planning.php">Career Guidance &amp; Placement Cell</a></li>
+        
+           
+        
+           <li><a href="#">NCC</a></li>
+        
+           
+        
+           <li><a href="NSS.php">NSS</a></li>
+        
+           
+        
+           <li><a href="Scouts_&amp;_Guides.php">Scouts &amp; Guides</a></li>
+        
+           
+        
+           <li><a href="Solar_plant.php">Solar Plant</a></li>
+        
+           
+        
+           <li><a href="#">Other Facilities</a></li>
+        
+           
+        
+          </ul>
+        
+          </li>
+        
+        
+          <li >
+        
+          
+        
+            <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        
+           Students
+        
+          </a>
+        
+          <ul class="sub_menu">
+        
+           <li><a href="class_routine.php">Class Routine</a></li>
+        
+           
+        
+           <li><a href="pdf/Academic Calendar 2021-converted.pdf">Academic Calendar</a></li>
+        
+           
+        
+           <li><a href="iqac_mentor_mentee.php">Mentor-Mentee</a></li>
+        
+           
+        
+           <li><a href="Code_of_conduct.php">Code of Conduct</a></li>
+        
+           
+        
+           <li><a href="Student_body.php">Students Body</a></li>
+        
+           
+        
+           <li><a href="#">Achievements</a></li>
+        
+           
+        
+           <li><a href="AwardAndScholarship.php">Awards &amp; Scholarships</a></li>
+        
+           
+        
+          </ul>
+        
+          </li>
+        
+          <li >
+        
+            <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        
+           Cells &amp; Clubs
+        
+          </a>
+        
+          <ul class="sub_menu">
+        
+           
+        
+           <li><a href="Anti_Ragging.php">Anti-Ragging Cell</a></li>
+        
+           
+        
+           <li><a href="stu_grievance.php">Students Grievence Cell</a></li>
+        
+           
+        
+           <li><a href="red_ribbon_club.php">Red Ribbon Club and Health &amp; Hygiene</a></li>
+
+        
+           <li><a href="Womens_cell.php">Women's Cell</a></li>
+        
+           
+        
+           <li><a href="super10&amp;30.php">Super 10 | Super 30</a></li>
+        
+           
+        
+           <li><a href="inovation.php">KCDCC StartUp &amp; innovation</a></li>
+        
+           
+        
+          </ul>
+        
+          </li>
+        
+        
+        
+          <li >
+        
+          
+        
+            <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        
+           Alumni
+        
+          </a>
+        
+          <ul class="sub_menu">
+        
+           <li><a href="Alumni.php">Office Bearers</a></li>
+        
+           
+        
+           <li><a href="#">Achievements</a></li>
+        
+           
+        
+           <li><a href="#">Registration Form</a></li>
+        
+          </ul>
+        
+          </li>
+        
+        
+        
+          <li >
+        
+          
+        
+            <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        
+           Feedback
+        
+          </a>
+        
+          <ul class="sub_menu">
+        
+           <li><a href="#">Students</a></li>
+        
+           
+        
+           <li><a href="#">Faculty</a></li>
+        
+           
+        
+           <li><a href="#">Alumni</a></li>
+        
+           
+        
+           <li><a href="#">Parents</a></li>
+        
+          </ul>
+        
+          </li>
+        
+         </ul>
+        </nav>
+    </section>
+    </header>
+<body>
+    <div style="color: salmon; font-size: large; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+        <h1 style="text-align: center;">Hellow word from </h1> 
+        <br>
+           <h1 style="text-align: center;">nayancoding</h1>
+    </div>
+    
+</body>
+</html>
+<script src="index.js"></script>

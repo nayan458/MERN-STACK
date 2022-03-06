@@ -1,0 +1,40 @@
+cmd/
+    git status
+    git init
+    git status
+    git add .
+    git commit -m " text "
+
+github 
+    create repo
+
+cmd/
+    git remote
+    git remote add origin 
+
+git/
+    ls ~/.ssh
+    id_rsa id_rsa.pub
+    
+    eval $(ssh-agent -s)
+
+    --> private key
+
+    ssh-add -K ~/.ssh/id_rsa
+    cat ~/.ssh/id_rsa.pub
+    -->
+cmd/
+    ssh -T github@gmail.com
+    git remote
+
+    git branch
+
+    git push -u origin master
+
+    {
+        git/
+            ssh
+
+            ssh-keygen -t rsa -4096 -C "emai@gmail.com"
+
+    }
